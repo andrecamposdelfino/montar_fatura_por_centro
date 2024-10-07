@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1275</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Montagem da fatura por centro de custo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="container">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1271</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#container{
+background-color:white;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="card_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_1{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblValorAdm">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorAdm{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - ADM</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="card_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>70</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_2{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="lblValorOficina">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorOficina{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - OFICINA</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="card_3">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>70</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_3{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - LOC JAIBA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblValorLocJaiba">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorLocJaiba{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>480</y>
+       <width>571</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>MONTAGEM DAS FATURAS POR CENTRO DE CUSTO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDataSistema">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>510</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ETS MARQUES TERRAPLENAGEM </string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="card_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>160</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_4{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - ALPHA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblValorAlpha">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorAlpha{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="card_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_5{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - LOC MAQ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblValorLocMaq">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorLocMaq{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="card_6">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>160</y>
+       <width>131</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#card_6{
+background-color:#f27e13;
+border-radius:8px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ETS - MAQ EQUIP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblValorMaqEquip">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lblValorMaqEquip{
+color:#ffffff;
+font-weight:bold;
+font-size:14px;
+}</string>
+      </property>
+      <property name="text">
+       <string>R$ 1.200,00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>40</y>
+       <width>551</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../undraw_Visionary_technology_re_jfp7.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>381</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Centro de custo</string>
+     </property>
+    </widget>
+    <zorder>label_9</zorder>
+    <zorder>card_1</zorder>
+    <zorder>card_2</zorder>
+    <zorder>card_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>lblDataSistema</zorder>
+    <zorder>card_4</zorder>
+    <zorder>card_5</zorder>
+    <zorder>card_6</zorder>
+    <zorder>label_10</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1275</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <addaction name="btnCadCredores"/>
+    <addaction name="btnCadCartao"/>
+    <addaction name="btnCadCentro"/>
+    <addaction name="btnLancarCompra"/>
+    <addaction name="btnSair"/>
+   </widget>
+   <widget class="QMenu" name="menuFaturas">
+    <property name="title">
+     <string>Faturas</string>
+    </property>
+    <addaction name="btnItau"/>
+    <addaction name="btnBrasil"/>
+    <addaction name="btnBradesco"/>
+   </widget>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuFaturas"/>
+  </widget>
+  <action name="btnCadCredores">
+   <property name="text">
+    <string>Cadastar credores</string>
+   </property>
+  </action>
+  <action name="btnCadCartao">
+   <property name="text">
+    <string>Cadastrar cartão</string>
+   </property>
+  </action>
+  <action name="btnCadCentro">
+   <property name="text">
+    <string>Cadastrar centro de custo</string>
+   </property>
+  </action>
+  <action name="btnSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="btnItau">
+   <property name="text">
+    <string>Itaú</string>
+   </property>
+  </action>
+  <action name="btnBrasil">
+   <property name="text">
+    <string>Banco do brasil</string>
+   </property>
+  </action>
+  <action name="btnBradesco">
+   <property name="text">
+    <string>Bradesco</string>
+   </property>
+  </action>
+  <action name="btnLancarCompra">
+   <property name="text">
+    <string>Lançar compra</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
